@@ -1,0 +1,877 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ELECTROWIZ'24</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./img/ECE SYMPOSIUM LOGO WHITE.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Varela+Round"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+      rel="stylesheet"
+    />
+    <link href="./vendors/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="./css/skin.css" rel="stylesheet" />
+    <link href="./css/notPC.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+  </head>
+
+  <body id="bdy">
+    <video autoplay muted loop id="myVideo" style="opacity: 0.3">
+      <source src="./homepage.mp4" type="video/mp4" />
+    </video>
+
+    <!-- Hero div -->
+    <div id="herodiv" class="vhcontainer myFlex centerFlex">
+      <div id="herotext">
+        <img src="./img/ECE SYMPOSIUM LOGO WHITE.png" id="herologo" />
+        <h1 class="logo">
+          <b><span class="z">E</span>LEC<span>TRO</span>WIZ'24</b>
+        </h1>
+        <h3 class="revo">EMERGE &nbsp EVOLVE &nbspEXCEL</h3>
+        <button
+          id="registerHeroButton"
+          class="btn-large myGradientRotationAnimation"
+          onclick="openInNewTab('https://forms.gle/xYD8BCBboPEfbuZz5')"
+        >
+          Register Now
+        </button>
+        <div class="myFlex" id="socialMediaSection">
+          <i
+            onclick="openInNewTab('https://www.instagram.com/vec.electrowiz2024', '_blank').focus();"
+            class="socialMediaIcons bi bi-instagram gradient1"
+          ></i>
+          <i
+            onclick="openInNewTab('https://www.google.com/maps/search/velammal+engineering+location/@13.1237442,80.182277,13z/data=!3m1!4b1?entry=ttu', '_blank').focus();"
+            class="socialMediaIcons bi bi-geo-alt-fill gradient1"
+          ></i>
+          <!-- <a
+            onclick="openInNewTab('./transport.pdf')"
+            class="socialMediaIcons bx bx-bus gradient1"
+          ></a> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- About div -->
+    <div
+      id="aboutdiv"
+      class="vhcontainer myFlex centerFlex"
+      style="height: 70vh"
+    >
+      <div class="column2flex">
+        <img
+          src="./img/brouch.jpg"
+          class="columnImage"
+          onclick="window.open('./img/brouch.jpg', '_blank').focus();"
+        />
+        <div class="myFlex centerFlex columnText">
+          <p>
+            We really excited to announce that, The Department of
+
+            <span class="gradient0 extraBold1">
+              Electronics and Communication Engineering</span
+            >
+            are coming together all set to bring out the hidden talents of the
+            budding engineers. Get ready people as the symposium
+            <span class="gradient0 extraBold">ELECTROWIZ'24</span> is down the
+            lane falling on
+            <span class="gradient0 extraBold1">25-01-2024(Thursday).</span>
+            We are excited to make the memorable day for you!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="myHeader extraBold gradient0">Registration Ends In</h2>
+    <div class="time-container">
+      <div class="time">
+        <p>Days</p>
+        <span id="days" class="gradient0 extraBold">00</span>
+      </div>
+      <div class="time">
+        <p>Hours</p>
+        <span id="hours" class="gradient0 extraBold">00</span>
+      </div>
+      <div class="time">
+        <p>Minutes</p>
+        <span id="minutes" class="gradient0 extraBold">00</span>
+      </div>
+      <div class="time">
+        <p>Seconds</p>
+        <span id="seconds" class="gradient0 extraBold">00</span>
+      </div>
+    </div>
+
+    <!-- Event List -->
+    <h2 class="myHeader extraBold gradient0">Events</h2>
+    <div id="eventdiv" class="triangle">
+      <div class="myFlex centerFlex columnText">
+        <ul class="columnList">
+          <span class="gradient0 extraBold">Technical</span>
+          <li onclick="openInNewTab('./page0.html')">
+            <h4>Presentino</h4>
+            <!--done-->
+          </li>
+          <li onclick="openInNewTab('./page1.html')">
+            <h4>Expowhiz</h4>
+            <!--done-->
+          </li>
+          <li onclick="openInNewTab('./page2.html')">
+            <h4>Brainiac</h4>
+            <!--done-->
+          </li>
+          <li onclick="openInNewTab('./page3.html')">
+            <h4>Error 404</h4>
+            <!--done-->
+          </li>
+          <li onclick="openInNewTab('./page4.html')">
+            <h4>Workshop</h4>
+          </li>
+          <!-- <li onclick="openInNewTab('./page5.html')">
+            <h4>Ideathon</h4>
+          </li> -->
+        </ul>
+      </div>
+      <div class="myFlex centerFlex columnText">
+        <ul class="columnList">
+          <span class="gradient0 extraBold">Non-Technical</span>
+          <li onclick="openInNewTab('./page6.html')">
+            <h4>Act React</h4>
+            <!--done-->
+          </li>
+          <li onclick="openInNewTab('./page7.html')">
+            <h4>Beat Blash</h4>
+            <!--done-->
+          </li>
+          <li onclick="openInNewTab('./page8.html')">
+            <h4>Focus Frenzy</h4>
+          </li>
+          <li onclick="openInNewTab('./page9.html')">
+            <h4>Puzzle Paradox</h4>
+          </li>
+          <li onclick="openInNewTab('./page10.html')">
+            <h4>Promo Pulse</h4>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <br /><br />
+    <h3 class="myHeader extraBold gradient0" style="margin-bottom: 3rem">
+      Presentino
+    </h3>
+    <div id="paperpresentation" class="myFlex centerFlex">
+      <div class="column2flex">
+        <img
+          src="./img/page0/eventimage.jpg"
+          class="columnImage"
+          onclick="window.open('./img/page0/eventimage.jpg', '_blank').focus();"
+          style="height: 60vh; width: 60vh"
+        />
+        <div class="myFlex centerFlex columnText">
+          <p>
+            The goal of a paper presentation is to inform and educate the
+            audience about the details and findings of the study, while also
+            engaging and capturing the audience's attention. In a paper
+            presentation, the presenter typically uses visual aids such as
+            slides or handouts to supplement their verbal delivery, and
+            interactive elements like questions and discussions to enhance
+            engagement.<br /><button
+              onclick="window.location.assign('./page0.html')"
+              class="btn extraBold knowmore"
+              style="margin: 1rem"
+            >
+              Know more <i class="bi bi-arrow-up-right-square-fill"></i>
+            </button>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <br /><br />
+    <h3 class="myHeader extraBold gradient0" style="margin-bottom: 3rem">
+      Expowhiz
+    </h3>
+    <div id="code&debugging" class="myFlex centerFlex">
+      <div class="column2flexinv">
+        <div
+          class="myFlex centerFlex columnText row0"
+          style="margin-top: 0 !important"
+        >
+          <p
+            style="
+              margin: 2rem;
+              margin-top: 0 !important;
+              margin-left: 0;
+              margin-right: 0;
+            "
+          >
+            Innovation Unveiled, Ideas Explored, Our Vision Soars, Future
+            Restored. Creativity Unbound, Dreams on Display, Come Witness
+            Tomorrow, in Every Array.<br /><button
+              onclick="window.location.assign('./page1.html')"
+              class="btn extraBold knowmore"
+              style="margin: 1rem"
+            >
+              Know more <i class="bi bi-arrow-up-right-square-fill"></i>
+            </button>
+          </p>
+        </div>
+        <img
+          src="./img/page1/eventimage.jpg"
+          class="columnImage row1"
+          onclick="window.open('./img/page1/eventimage.jpg', '_blank').focus();"
+          style="height: 60vh; width: 60vh"
+        />
+      </div>
+    </div>
+
+    <br /><br />
+    <h3 class="myHeader extraBold gradient0" style="margin-bottom: 3rem">
+      Brainiac
+    </h3>
+    <div id="sharktank" class="myFlex centerFlex">
+      <div class="column2flex">
+        <img
+          src="./img/page2/eventimage.jpg"
+          class="columnImage"
+          onclick="window.open('./img/page2/eventimage.jpg', '_blank').focus();"
+          style="height: 60vh; width: 60vh"
+        />
+        <div class="myFlex centerFlex columnText">
+          <p>
+            Immerse yourself in the vibrant world of bits and bytes, where every
+            correct answer takes you one step closer to victory. Prizes await
+            those who conquer the challenges, so assemble your dream team and
+            gear up for an epic battle!<br /><button
+              onclick="window.location.assign('./page2.html')"
+              class="btn extraBold knowmore"
+              style="margin: 1rem"
+            >
+              Know more <i class="bi bi-arrow-up-right-square-fill"></i>
+            </button>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <br /><br />
+    <h3 class="myHeader extraBold gradient0" style="margin-bottom: 3rem">
+      Error 404
+    </h3>
+    <div id="Techons" class="myFlex centerFlex">
+      <div class="column2flexinv">
+        <div
+          class="myFlex centerFlex columnText row0"
+          style="margin-top: 0 !important"
+        >
+          <p
+            style="
+              margin: 2rem;
+              margin-top: 0 !important;
+              margin-left: 0;
+              margin-right: 0;
+            "
+          >
+            Coding is a great combination between artistry and engineering . Do
+            you want to show your artistic mind to the world , stop showing it
+            through your words , show it through your code<br /><button
+              onclick="window.location.assign('./page3.html')"
+              class="btn extraBold knowmore"
+              style="margin: 1rem"
+            >
+              Know more <i class="bi bi-arrow-up-right-square-fill"></i>
+            </button>
+          </p>
+        </div>
+        <img
+          src="./img/page3/eventimage.jpg"
+          class="columnImage row1"
+          onclick="window.open('./img/page3/eventimage.jpg', '_blank').focus();"
+          style="height: 60vh; width: 60vh"
+        />
+      </div>
+    </div>
+    <br /><br />
+    <h3 class="myHeader extraBold gradient0" style="margin-bottom: 3rem">
+      Workshop
+    </h3>
+    <div id="paperpresentation" class="myFlex centerFlex">
+      <div class="column2flex">
+        <img
+          src="./img/page4/eventimage.jpg"
+          class="columnImage"
+          onclick="window.open('./img/page0/eventimage.jpg', '_blank').focus();"
+          style="height: 60vh; width: 60vh"
+        />
+        <div class="myFlex centerFlex columnText">
+          <p>
+            Join the revolution of change-makers and trailblazers who are
+            shaping the future with our visionary workshop on Industry 4.0.<br /><button
+              onclick="window.location.assign('./page4.html')"
+              class="btn extraBold knowmore"
+              style="margin: 1rem"
+            >
+              Know more <i class="bi bi-arrow-up-right-square-fill"></i>
+            </button>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--
+    <br /><br />
+    <h3 class="myHeader extraBold gradient0" style="margin-bottom: 3rem">
+      Technocart
+    </h3>
+    <div id="Technocart" class="myFlex centerFlex">
+      <div class="column2flex">
+        <img
+          src="./img/page4/5.jpg"
+          class="columnImage"
+          onclick="window.open('./img/page4/5.jpg', '_blank').focus();"
+        />
+        <div class="myFlex centerFlex columnText">
+          <p>
+            A Technical quiz is a game which can also be called a mind sport
+            wherein the players, either as individuals or in teams attempt to
+            answer questions posed to them correctly, in order to win a
+            prize.<br /><button
+              onclick="window.location.assign('./page4.html')"
+              class="btn extraBold knowmore"
+              style="margin: 1rem"
+            >
+              Know more <i class="bi bi-arrow-up-right-square-fill"></i>
+            </button>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <br /><br />
+    <h3 class="myHeader extraBold gradient0" style="margin-bottom: 3rem">
+      Ideathon
+    </h3>
+    <div id="Ideathon" class="myFlex centerFlex">
+      <div class="column2flexinv">
+        <div
+          class="myFlex centerFlex columnText row0"
+          style="margin-top: 0 !important"
+        >
+          <p
+            style="
+              margin: 2rem;
+              margin-top: 0 !important;
+              margin-left: 0;
+              margin-right: 0;
+            "
+          >
+            An ideathon is a short, intensive, workshop-like experience for
+            students to address some of the most pressing challenges of our
+            time. Participants work in teams and use design thinking and
+            innovative learning practices to ideate and collaborate on possible
+            solutions.<br /><button
+              onclick="window.location.assign('./page5.html')"
+              class="btn extraBold knowmore"
+              style="margin: 1rem"
+            >
+              Know more <i class="bi bi-arrow-up-right-square-fill"></i>
+            </button>
+          </p>
+        </div>
+        <img
+          src="./img/page5/6.jpg"
+          class="columnImage row1"
+          onclick="window.open('./img/page5/6.jpg', '_blank').focus();"
+        />
+      </div>
+    </div>
+  -->
+    <br /><br />
+    <h3 class="myHeader extraBold gradient0" style="margin-bottom: 3rem">
+      Act React
+    </h3>
+    <div id="Gaming" class="myFlex centerFlex">
+      <div class="column2flex">
+        <div class="myFlex centerFlex columnText">
+          <p>
+            Calling all DC enthusiasts! Showcase your DC Comics knowledge in a
+            thrilling dumb charades contest. It's your time to shine like a
+            superhero under the Bat Signal. As Wonder Woman would say, it's your
+            sacred duty to defend the world of DC lore. Whatever it takes, good
+            luck on this epic quest at the symposium!"<br /><button
+              onclick="window.location.assign('./page6.html')"
+              class="btn extraBold knowmore"
+              style="margin: 1rem"
+            >
+              Know more <i class="bi bi-arrow-up-right-square-fill"></i>
+            </button>
+          </p>
+        </div>
+        <img
+          src="./img/page6/eventimage.jpg"
+          class="columnImage"
+          onclick="window.open('./img/page6/eventimage.jpg', '_blank').focus();"
+          style="height: 60vh; width: 60vh"
+        />
+      </div>
+    </div>
+
+    <br /><br />
+    <h3 class="myHeader extraBold gradient0" style="margin-bottom: 3rem">
+      Beat Blash
+    </h3>
+    <div id="Multimedia" class="myFlex centerFlex">
+      <div class="column2flexinv">
+        <img
+          src="./img/page7/eventimage.jpg"
+          class="columnImage row1"
+          onclick="window.open('./img/page7/eventimage.jpg', '_blank').focus();"
+          style="height: 60vh; width: 60vh"
+        />
+        <div
+          class="myFlex centerFlex columnText row0"
+          style="margin-top: 0 !important"
+        >
+          <p
+            style="
+              margin: 2rem;
+              margin-top: 0 !important;
+              margin-left: 0;
+              margin-right: 0;
+            "
+          >
+            Get ready to be entertained! "Montage" is coming to town, and it
+            promises to be a spectacular showcase of the best in multimedia.
+            Present your works in ( Photography / Short Films ) and get your
+            appreciation with prizes.<br /><button
+              onclick="window.location.assign('./page7.html')"
+              class="btn extraBold knowmore"
+              style="margin: 1rem"
+            >
+              Know more <i class="bi bi-arrow-up-right-square-fill"></i>
+            </button>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <br /><br />
+    <h3 class="myHeader extraBold gradient0" style="margin-bottom: 3rem">
+      Focus Frenzy
+    </h3>
+    <div id="cineOtaku" class="myFlex centerFlex">
+      <div class="column2flex">
+        <div class="myFlex centerFlex columnText">
+          <p>
+            If you are a photophile Here is the right time for your expertise.
+            Get ready with your MOBILE PHONE / DSLR.<br /><button
+              onclick="window.location.assign('./page8.html')"
+              class="btn extraBold knowmore"
+              style="margin: 1rem"
+            >
+              Know more <i class="bi bi-arrow-up-right-square-fill"></i>
+            </button>
+          </p>
+        </div>
+        <img
+          src="./img/page8/eventimage.jpg"
+          class="columnImage"
+          onclick="window.open('./img/page8/eventimage.jpg', '_blank').focus();"
+          style="height: 60vh; width: 60vh"
+        />
+      </div>
+    </div>
+
+    <br /><br />
+    <h3 class="myHeader extraBold gradient0" style="margin-bottom: 3rem">
+      Puzzle Paradox
+    </h3>
+    <div id="hakunaMatata" class="myFlex centerFlex">
+      <div class="column2flexinv">
+        <img
+          src="./img/page9/eventimage.jpg"
+          class="columnImage row1"
+          onclick="window.open('./img/page9/eventimage.jpg', '_blank').focus();"
+          style="height: 60vh; width: 60vh"
+        />
+        <div
+          class="myFlex centerFlex columnText row0"
+          style="margin-top: 0 !important"
+        >
+          <p
+            style="
+              margin: 2rem;
+              margin-top: 0 !important;
+              margin-left: 0;
+              margin-right: 0;
+            "
+          >
+            Forget crosswords, dive deeper! Puzzle Paradox: word puzzles on
+            steroids. Crack codes, untangle meanings, ignite your wordplay. One
+            epic night, logic vs. language. Dare to conquer chaos? Come play!<br /><button
+              onclick="window.location.assign('./page9.html')"
+              class="btn extraBold knowmore"
+              style="margin: 1rem"
+            >
+              Know more <i class="bi bi-arrow-up-right-square-fill"></i>
+            </button>
+          </p>
+        </div>
+      </div>
+    </div>
+    <br /><br />
+    <h3 class="myHeader extraBold gradient0" style="margin-bottom: 3rem">
+      Promo Pulse
+    </h3>
+    <div id="cricMania" class="myFlex centerFlex">
+      <div class="column2flex">
+        <div class="myFlex centerFlex columnText">
+          <p>
+            If you haven't heard of box cricket, then we pity your childhood the
+            rules are pretty simple, y'all play cricket inside a box and unlike
+            cricket a sixer doesn't get you runs but it's the other way
+            around.<br /><button
+              onclick="window.location.assign('./page10.html')"
+              class="btn extraBold knowmore"
+              style="margin: 1rem"
+            >
+              Know more <i class="bi bi-arrow-up-right-square-fill"></i>
+            </button>
+          </p>
+        </div>
+        <img
+          src="./img/page10/eventimage.jpg"
+          class="columnImage"
+          onclick="window.open('./img/page9/eventimage', '_blank').focus();"
+          style="height: 60vh; width: 60vh"
+        />
+      </div>
+    </div>
+    <br /><br />
+    <!-- <h3 class="myHeader extraBold gradient0" style="margin-bottom: 3rem">
+      Budget UCL
+    </h3>
+    <div id="futsal" class="myFlex centerFlex">
+      <div class="column2flexinv">
+        <div
+          class="myFlex centerFlex columnText row0"
+          style="margin-top: 0 !important"
+        >
+          <p
+            style="
+              margin: 2rem;
+              margin-top: 0 !important;
+              margin-left: 0;
+              margin-right: 0;
+            "
+          >
+            Low budget champions league... Guess that explains everything :)<br /><button
+              onclick="window.location.assign('./page11.html')"
+              class="btn extraBold knowmore"
+              style="margin: 1rem"
+            >
+              Know more <i class="bi bi-arrow-up-right-square-fill"></i>
+            </button>
+          </p>
+        </div>
+        <img
+          src="./img/page9/pp.jpg"
+          class="columnImage row1"
+          onclick="window.open('./img/page9/pp.jpg', '_blank').focus();"
+        />
+      </div>
+    </div> -->
+    <br /><br />
+    <!-- <h2 class="myHeader extraBold gradient0">Registration Guidelines</h2>
+    <div
+      class="generalDiv"
+      style="
+        width: max-content;
+        max-width: 90%;
+        margin: auto;
+        position: relative;
+        z-index: 10001;
+      "
+    >
+      1. Registration fee: ₹ 150/- per head for a total of two events one technical and
+      one nontechnical events.<br /><br />
+      2. After registration is done, the participants should join the 
+      WhatsApp group for further updates.
+      <br /><br />
+      4. Hakuna Matata is free for all.<br /><br />
+      5. Snacks and lunch will be provided.<br /><br />
+      6. No refund of registration fees is encouraged.<br /><br />
+    </div>
+    <br /><br /> -->
+
+    <h2 class="myHeader extraBold gradient0">General Guidelines</h2>
+    <div
+      class="generalDiv"
+      style="
+        width: max-content;
+        max-width: 90%;
+        margin: auto;
+        position: relative;
+        z-index: 10001;
+      "
+    >
+      1. All events of ELECTROWIZ'24 are conducted only through offline mode.<br /><br />
+      2. Online portal for registration will be closed on (23.01.2024).<br /><br />
+      3. The entries for the events will be accepted only on successful payment
+      of registration fee.<br /><br />
+      4.The offline registration process will end by 9.30.am on the day of
+      event.<br /><br />
+      5. Students must carry their college ID card and a copy of the mail
+      received during registration.<br /><br />
+      6. All the events will commence at the scheduled time. Participants are
+      requested to be punctual.<br /><br />
+      7. Participants are requested to collect the event tags from the
+      registration desk.<br /><br />
+      8. The jury decision will be final in all matters.<br /><br />
+      9. Dress code should be Formal wear.<br /><br />
+      10. Exciting Prizes will be given to winners and Participation
+      certificates will be provided for all.<br /><br />
+      11. Students should refrain from abusive language, obscene display and a
+      good decorum will be appreciated.<br /><br />
+      12. Smoking and consumption of alcohols and any such substance is strictly
+      prohibited inside the college premises.<br /><br />
+    </div>
+    <br /><br />
+
+    <!-- Co ordinator List -->
+    <!-- <h2 class="myHeader extraBold gradient0">Contacts</h2>
+    <h5 class="myHeader extraBold1 gradient0">Staff Co-ordinators</h5>
+    <div class="triangle">
+      <div>
+        <h5 class="extrabold1">Dr.K.Lavanya</h5>
+        
+        <h6>+91 98413 73600</h6>
+      </div>
+      <div>
+        <h5 class="extrabold1">Mr.E.Gangadurai</h5>
+        
+        <h6>+91 73734 35828</h6>
+      </div>
+      <div>
+        <h5 class="extrabold1">Mr.G.Subramanian</h5>
+       
+        <h6>+91 99442 17707</h6>
+      </div>      
+    </div> -->
+
+    <!-- staff co-ordinators -->
+    <h2 class="myHeader extraBold gradient0">Contacts</h2>
+    <h5 class="myHeader extrabold1 gradient0">Staff Co-ordinators</h5>
+    <div class="triangle">
+      <div>
+        <h5 class="extrabold1">Dr.K.Lavanya</h5>
+        <!-- <h6 class="myHeader extrabold1 gradient0">President</h6> -->
+        <h6>+91 98413 73600</h6>
+      </div>
+      <div>
+        <h5 class="extrabold1">Mr.E.Gangadurai</h5>
+        <!-- <h6 class="myHeader extrabold1 gradient0">Vice President</h6> -->
+        <h6>+91 73734 35828</h6>
+      </div>
+    </div>
+    <div class="triangle" style="display: block">
+      <h5 class="extrabold1">Mr.G.Subramanian</h5>
+      <!-- <h6 class="myHeader extrabold1 gradient0">Event Manager</h6> -->
+      <h6>+91 99442 17707</h6>
+    </div>
+    <br />
+    <div class="triangle subu-none">
+      <div>
+        <h5 class="extrabold1"></h5>
+        <!-- <h6 class="myHeader extrabold1 gradient0">President</h6> -->
+        <h6></h6>
+      </div>
+      <div>
+        <h5 class="extrabold1"></h5>
+        <!-- <h6 class="myHeader extrabold1 gradient0">Vice President</h6> -->
+        <h6></h6>
+      </div>
+    </div>
+
+    <br />
+    <br />
+    <h5 class="myHeader extrabold1 gradient0">Student Co-ordinators</h5>
+    <div class="triangle">
+      <div>
+        <h5 class="extrabold1">Sudarvanan k</h5>
+        <!-- <h6 class="myHeader extrabold1 gradient0">President</h6> -->
+        <h6>+91 94443 39293</h6>
+      </div>
+      <div>
+        <h5 class="extrabold1">Nithya Sri V</h5>
+        <!-- <h6 class="myHeader extrabold1 gradient0">Vice President</h6> -->
+        <h6>+91 93454 93766</h6>
+      </div>
+    </div>
+    <div class="triangle" style="display: block">
+      <h5 class="extrabold1">Archanaa R</h5>
+      <!-- <h6 class="myHeader extrabold1 gradient0">Event Manager</h6> -->
+      <h6>+91 98841 58029</h6>
+    </div>
+
+    <br />
+
+    <div class="triangle">
+      <div>
+        <h5 class="extrabold1">Harish Raj J</h5>
+        <!-- <h6 class="myHeader extrabold1 gradient0">President</h6> -->
+        <h6>+91 89251 50118</h6>
+      </div>
+      <div>
+        <h5 class="extrabold1">Megavarshini R.R</h5>
+        <!-- <h6 class="myHeader extrabold1 gradient0">Vice President</h6> -->
+        <h6>+91 93601 28102</h6>
+      </div>
+    </div>
+    <div class="triangle" style="display: block">
+      <h5 class="extrabold1">Aruneshwaran U</h5>
+
+      <h6>+91 99529 55941</h6>
+    </div>
+
+    <br />
+
+    <div class="triangle">
+      <div>
+        <h5 class="extrabold1">Naveen Kumar S</h5>
+
+        <h6>91 93619 35120</h6>
+      </div>
+      <div>
+        <h5 class="extrabold1">Shabareesh T.S</h5>
+
+        <h6>+91 98407 15299</h6>
+      </div>
+    </div>
+
+    <br /><br />
+    <div class="myfooter">
+      <span
+        class="footer"
+        style="
+          display: block;
+          color: white;
+          margin: auto;
+          font-weight: 600;
+          width: max-content;
+          max-width: 90%;
+        "
+        >Sponsored by</span
+      ><br /><br />
+      <img
+        src="./img/velammal.png"
+        style="display: block; width: max-content; max-width: 90%; margin: auto"
+      />
+      <br />
+      <h5 class="myHeader extrabold1 gradient0">Developed By</h5>
+      <br />
+      <div
+        id="developer_name"
+        style="
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+        "
+      >
+        <button
+          id="registerHeroButton"
+          class="btn-small myGradientRotationAnimation"
+          onclick="openInNewTab('https://github.com/Nav09een')"
+        >
+          Naveen Kumar S
+        </button>
+        <button
+          id="registerHeroButton"
+          class="btn-small myGradientRotationAnimation"
+          onclick="openInNewTab('https://github.com/Nithishsandy')"
+        >
+          Nithish Kumar S
+        </button>
+        <button
+          id="registerHeroButton"
+          class="btn-small myGradientRotationAnimation"
+          onclick="openInNewTab('https://github.com/Nirmalraj3112')"
+        >
+          Nirmalraj D
+        </button>
+        <button
+          id="registerHeroButton"
+          class="btn-small myGradientRotationAnimation"
+          onclick="openInNewTab('https://github.com/iamsolai')"
+        >
+          Solai Mithilesh T
+        </button>
+      </div>
+    </div>
+    <script type="text/javascript">
+      setInterval(function countDown() {
+        const now = new Date().getTime();
+        const targetTime = new Date("January 25, 2024, 09:30:00").getTime();
+
+        const diff = targetTime - now;
+
+        var d = Math.floor(diff / (1000 * 60 * 60 * 24));
+        var h = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var m = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+        var s = Math.floor((diff % (1000 * 60)) / 1000);
+
+        document.getElementById("days").innerHTML = d;
+        document.getElementById("hours").innerHTML = h;
+        document.getElementById("minutes").innerHTML = m;
+        document.getElementById("seconds").innerHTML = s;
+      }, 1000);
+    </script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
+      integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./js/auto.js"></script>
+    <script>
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "firebase/app";
+      import { getAnalytics } from "firebase/analytics";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyC_eXEGFlW3niXw8OnmX4S-_7lnJmYSeAU",
+        authDomain: "symposium-a4871.firebaseapp.com",
+        projectId: "symposium-a4871",
+        storageBucket: "symposium-a4871.appspot.com",
+        messagingSenderId: "319554882168",
+        appId: "1:319554882168:web:65df380b72e917e4623b8d",
+        measurementId: "G-RZ60Z2549J",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
+  </body>
+</html>
